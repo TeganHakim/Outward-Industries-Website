@@ -1,0 +1,40 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--primary-300);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  overflow-x: hidden;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  background-color: var(--neutral-800);
+  color: var(--primary-100);
+}
+
+/* Root Colors */
+:root {
+  --primary-100: #f5eee0;
+  --primary-200: #ded2b6;
+  --primary-300: #b0aa9d;
+  --primary-350: #e0dac8;
+  --neutral-100: #000000b4;
+  --neutral-200: #5e594d;
+  --neutral-800: #000000;
+}
