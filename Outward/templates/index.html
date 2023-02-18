@@ -12,10 +12,9 @@
     <meta name="author" content="" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,7 +29,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top"><img class="logo-img" src="{% static 'images/Outward_Industries_Logo.png' %}"" alt="Outward Industries Logo">Outward Industries</a>
+                <a class="navbar-brand" href="#page-top"><img class="logo-img" src="{% static 'images/Outward-Industries-Logo.svg' %}"" alt="Outward Industries Logo">Outward Industries</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -49,7 +48,7 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Innovation</h1>
+                        <h1 class="mx-auto my-0 text-uppercase">Software Design</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">A custom software solution company to tailor to all of your business needs.</h2>
                         <a class="btn btn-primary" href="#about">Get Started</a>
                     </div>
@@ -87,9 +86,9 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/img/demo-image-01.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/web-developer.svg' %}" alt="..." /></div>
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Misty</h4>
@@ -102,9 +101,9 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/img/demo-image-02.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/code-version-control.svg' %}" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Mountains</h4>
@@ -123,29 +122,23 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <h2 class="text-white mb-5">Contact Us!</h2>
+                        <form class="form-signup" id="contactForm" method="POST" action="#">
+                            {% csrf_token %}
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                                <div class="col"><input required class="form-control" id="contactName" type="text" placeholder="Enter name..." aria-label="Enter name..."/></div>
                             </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input required class="form-control" id="emailAddress" type="email" placeholder="Enter email..." aria-label="Enter email..."/></div>
+                                <div class="col"><input required class="form-control" id="emailAddress" type="text" placeholder="Enter subject..." aria-label="Enter subject..."/></div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                            <div class="row input-group-newsletter">
+                                <div class="col"><textarea required class="form-control" id="message" type="text" placeholder="Enter message..." aria-label="Enter message..."></textarea></div>
+                            </div>
+                            <div class="row input-group-newsletter">
+                                <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Submit</button></div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -182,6 +175,7 @@
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
                                 <div class="small text-black-50">+1 (410) 591-6299</div>
+                                <div class="small text-black-50">+1 (410) 568-8206</div>
                             </div>
                         </div>
                     </div>
