@@ -26,243 +26,252 @@
     <title>Outward Industries</title>
 </head>
 <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top"><img class="logo-img" src="{% static 'images/Outward-Industries-Logo.svg' %}"" alt="Outward Industries Logo">Outward Industries</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                    </ul>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top"><img class="logo-img" src="{% static 'images/Outward-Industries-Logo.svg' %}"" alt="Outward Industries Logo">Outward Industries</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <video playsinline autoplay muted loop loading="lazy" class="fullscreen-bg__video">
+            <source src="{% static 'images/landing-video.mp4' %}" type="video/mp4">
+        </video>
+        <div class="container-fluid px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Elevate Your Vision</h1>
+                    <h2 class="text-white-50 mx-auto mt-3 mb-5">Delivering innovative website design and custom software solutions to take your business to new heights</h2>
+                    <a class="btn btn-primary" href="#about">Get Started</a>
                 </div>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <video playsinline autoplay muted loop loading="lazy" class="fullscreen-bg__video">
-                <source src="{% static 'images/landing-video.mp4' %}" type="video/mp4">
-            </video>
-            <div class="container-fluid px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Elevate Your Vision</h1>
-                        <h2 class="text-white-50 mx-auto mt-3 mb-5">Delivering innovative website design and custom software solutions to take your business to new heights</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">&lt;Welcome to Outward Industries/&gt;</h2>
+                    <p class="text-white-50">
+                        At Outward Industries, we understand the importance of having a strong online presence and efficient business operations. 
+                        That's why we offer innovative website design and custom software solutions tailored to the unique needs of small businesses. 
+                        Our expert team works closely with you to create a website and software that effectively conveys your message and enhances your 
+                        workflow.
+                    </p>
+                </div>
+            </div>
+            <img class="img-fluid" src="{% static 'images/img/ipad.png' %}" alt ="..." />
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5 approach">
+            <!-- Featured Project Row-->
+            <div class="row gx-5 mb-4 mb-lg-5 justify-content-center align-items-center">
+                <div class="col-xl-7 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'images/to-do-list-cropped.svg' %}" alt="..." /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h3>Our Approach</h3>
+                        <p class="text-black-50 mb-0">We understand that each business is unique, which is why we offer personalized attention and creative 
+                            solutions to each of our clients. Our team works closely with you to identify your goals and create a website and software that 
+                            effectively conveys your message and enhances your workflow.</p>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">&lt;Welcome to Outward Industries/&gt;</h2>
-                        <p class="text-white-50">
-                            At Outward Industries, we understand the importance of having a strong online presence and efficient business operations. 
-                            That's why we offer innovative website design and custom software solutions tailored to the unique needs of small businesses. 
-                            Our expert team works closely with you to create a website and software that effectively conveys your message and enhances your 
-                            workflow.
-                        </p>
+        </div>
+        <div class="container-fluid carousel-container">
+            <!-- Carousel -->
+            <div class="row gx-5 mb-4 mb-lg-5 justify-content-center align-items-center carousel">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="portfolio-text text-center text-lg-left">
+                        <h3>Portfolio</h3>
+                        <p class="text-white-50 mb-0">We understand that each business is unique, which is why we offer personalized attention and creative 
+                            solutions to each of our clients. Our team works closely with you to identify your goals and create a website and software that 
+                            effectively conveys your message and enhances your workflow.</p>
                     </div>
                 </div>
-                <img class="img-fluid" src="{% static 'images/img/ipad.png' %}" alt ="..." />
-            </div>
-        </section>
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5 approach">
-                <!-- Featured Project Row-->
-                <div class="row gx-5 mb-4 mb-lg-5 justify-content-center align-items-center">
-                    <div class="col-xl-7 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'images/to-do-list-cropped.svg' %}" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h3>Our Approach</h3>
-                            <p class="text-black-50 mb-0">We understand that each business is unique, which is why we offer personalized attention and creative 
-                                solutions to each of our clients. Our team works closely with you to identify your goals and create a website and software that 
-                                effectively conveys your message and enhances your workflow.</p>
+                <div class="col-xl-6 col-lg-6">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid carousel-container">
-                <!-- Carousel -->
-                <div class="row gx-5 mb-4 mb-lg-5 justify-content-center align-items-center carousel">
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="portfolio-text text-center text-lg-left">
-                            <h3>Portfolio</h3>
-                            <p class="text-white-50 mb-0">We understand that each business is unique, which is why we offer personalized attention and creative 
-                                solutions to each of our clients. Our team works closely with you to identify your goals and create a website and software that 
-                                effectively conveys your message and enhances your workflow.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div id="carouselExampleCaptions" class="carousel slide">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="{% static 'images/img/demo-image-01.jpg' %}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Outbound</h5>
+                                <p>SMS Marketing made efficient</p>
                             </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="{% static 'images/img/demo-image-01.jpg' %}" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Outbound</h5>
-                                  <p>SMS Marketing made efficient</p>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="{% static 'images/img/demo-image-02.jpg' %}" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Second slide label</h5>
-                                  <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="{% static 'images/img/demo-image-01.jpg' %}" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Third slide label</h5>
-                                  <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                              </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="container px-4 px-lg-5 projects">
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                        <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/web-developer.svg' %}" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Custom Web Design</h4>
-                                        <p class="mb-0 text-white-50">At Outward, our website design services incorporate the latest technologies and innovative 
-                                            techniques to deliver responsive, high-speed, and visually appealing websites. From basic landing pages to intricate 
-                                            websites, our team possesses the creativity to elevate your vision to new heights.</p>
-                                        <hr class="d-none d-lg-block mb-0 ms-0" />
-                                    </div>
-                                </div>
+                            <div class="carousel-item">
+                            <img src="{% static 'images/img/demo-image-02.jpg' %}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="{% static 'images/img/demo-image-01.jpg' %}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!-- Project Two Row-->
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/code-version-control.svg' %}" alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Software Solutions</h4>
-                                        <p class="mb-0 text-white-50">When it comes to enhancing workflow and maximizing efficiency in your business, 
-                                            custom software solutions can be the game-changer. At our company, we specialize in simplifying the process 
-                                            of identifying and implementing the right optimizations for your specific needs. With our scalable, efficient, 
-                                            and high-quality software solutions, we can help you gain a competitive advantage.
-                                        </p>
-                                        <hr class="d-none d-lg-block mb-0 me-0" />
-                                    </div>
+                </div>
+            </div>
+            <!-- Project One Row-->
+            <div class="container px-4 px-lg-5 projects">
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/web-developer.svg' %}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Custom Web Design</h4>
+                                    <p class="mb-0 text-white-50">At Outward, our website design services incorporate the latest technologies and innovative 
+                                        techniques to deliver responsive, high-speed, and visually appealing websites. From basic landing pages to intricate 
+                                        websites, our team possesses the creativity to elevate your vision to new heights.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Contact Us!</h2>
-                        <form class="form-signup" id="contactForm" method="POST" action="#">
-                            {% csrf_token %}
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input required class="form-control" id="contactName" type="text" placeholder="Enter name..." aria-label="Enter name..."/></div>
-                            </div>
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input required class="form-control" id="emailAddress" type="email" placeholder="Enter email..." aria-label="Enter email..."/></div>
-                                <div class="col"><input required class="form-control" id="emailAddress" type="text" placeholder="Enter subject..." aria-label="Enter subject..."/></div>
-                            </div>
-                            <div class="row input-group-newsletter">
-                                <div class="col"><textarea required class="form-control" id="message" type="text" placeholder="Enter message..." aria-label="Enter message..."></textarea></div>
-                            </div>
-                            <div class="row input-group-newsletter">
-                                <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Location</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Based in Maryland, United States</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">support@outwardindustries.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (410) 591-6299</div>
-                                <div class="small text-black-50">+1 (410) 568-8206</div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/code-version-control.svg' %}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Software Solutions</h4>
+                                    <p class="mb-0 text-white-50">When it comes to enhancing workflow and maximizing efficiency in your business, 
+                                        custom software solutions can be the game-changer. At our company, we specialize in simplifying the process 
+                                        of identifying and implementing the right optimizations for your specific needs. With our scalable, efficient, 
+                                        and high-quality software solutions, we can help you gain a competitive advantage.
+                                    </p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://www.instagram.com/outwardindustries/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a class="mx-2" href="https://github.com/TeganHakim" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="mx-2" href="mailto: support@outwardindustries.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Contact Us!</h2>
+                    <form class="form-signup" id="contactForm" method="POST" action="#">
+                        {% csrf_token %}
+                        <!-- Email address input-->
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input required class="form-control" id="contactName" type="text" placeholder="Enter name..." aria-label="Enter name..."/></div>
+                        </div>
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input required class="form-control" id="emailAddress" type="email" placeholder="Enter email..." aria-label="Enter email..."/></div>
+                            <div class="col"><input required class="form-control" id="emailAddress" type="text" placeholder="Enter subject..." aria-label="Enter subject..."/></div>
+                        </div>
+                        <div class="row input-group-newsletter">
+                            <div class="col"><textarea required class="form-control" id="message" type="text" placeholder="Enter message..." aria-label="Enter message..."></textarea></div>
+                        </div>
+                        <div class="row input-group-newsletter">
+                            <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Submit</button></div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Outward Industries <span id="copy-date">2023</span></div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="{% static 'js/script.js' %}"></script>
-        <!-- Bootstrap -->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Location</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">Based in Maryland, United States</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50"><a href="#!">support@outwardindustries.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">+1 (410) 591-6299</div>
+                            <div class="small text-black-50">+1 (410) 568-8206</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="https://www.instagram.com/outwardindustries/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="mx-2" href="https://github.com/TeganHakim" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="mx-2" href="mailto: support@outwardindustries.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#about" class="nav-link px-3 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link px-3 text-muted">Projects</a></li>
+            <li class="nav-item"><a href="#signup" class="nav-link px-3 text-muted">Contact</a></li>
+            <li class="nav-item"><a href="/terms-of-use/" class="nav-link px-3 text-muted">Terms of Use</a></li>
+            <li class="nav-item"><a href="/privacy-policy/" class="nav-link px-3 text-muted">Privacy Policy</a></li>
+            </ul>
+        <div class="container px-4 px-lg-5">Copyright &copy; <a href="#page-top" class="outward-text">Outward Industries</a> <span id="copy-date">2023</span></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
 </html>
 
 
