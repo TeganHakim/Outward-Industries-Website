@@ -42,6 +42,9 @@ window.addEventListener('DOMContentLoaded', event => {
       });
   });
 
+  document.getElementById('copy-date').innerText = new Date().getFullYear();  
+  // Animate on scroll
+  AOS.init({
+    disable: window.innerWidth < 700
+  });
 });
-
-document.getElementById('copy-date').innerText = new Date().getFullYear();
