@@ -38,10 +38,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Info</a></li>
                     <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                 </ul>
             </div>
@@ -418,19 +418,97 @@
         </div>
     </section>
 
-    <!-- Testing shtuff-->
-    <section class="bg-light">
-      <div class="container px-5">
-          <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-              <div class="col-12 col-lg-5">
-                  <h2 class="display-4 lh-1 mb-4">Wonder How We Can Help?</h2>
-              </div>
-              <div class="col-sm-8 col-md-6">
-                  <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..."></div>
-              </div>
-          </div>
-      </div>
-  </section> 
+    <!-- FAQ Section-->
+    <section class="faq-section text-center " id="faq">
+      <div class="bg-light">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+              <h1 class="display-4 lh-1 mb-4">Wonder How We Can Help?</h1>
+                <div class="col-12 col-lg-5">
+                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="{% static 'images/faq.svg' %}" alt="..."></div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Finding the Problem
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Time is Money. Finding drawbacks is crucial.</strong> 
+                          <p>Identifying and solving problems with tech is our bread and butter.
+                            Whether you're struggling with inventory management, customer relations, 
+                            scheduling, or any other aspect of your business, we can work with you to find 
+                            areas of improvement. Let us help you save time and improve your productivity.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Creating Solutions 
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Starting is the hardest thing.</strong> 
+                          <p>We take pride in our ability to create tailored solutions to meet your unique challenges head on.
+                            We can help streamline workflow, automate tasks, optimize data management, and more based on your businesses needs.
+                            We work closely with you to understand your vision, and use an iterative process to keep our work high quality along the way. 
+                            Let us help you overcome obstacles and enhance workflow with personalized software for any need.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Implementation
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>What good is our software if you can't use it?</strong> 
+                          <p>We help you implement our solutions fast and effectively. With our extensive knowledge of programming, we ensure that the
+                            code we create is scalable and responsive, enabling you to adapt to changes as you grow. We guide the implementation process, 
+                            ensuring a smooth and successful transition to our software that won't cost you time. Let us help you unlock the full potential
+                            of your software, and take your business to the next level.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Customizations 
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Possiblities are Endless. Seriously.</strong> 
+                          <p>we believe that one size does not fit all. That's why we specialize in creating customized software solutions that are tailored to your unique business needs. We take the time to understand your operations, challenges, and goals, and we use our expertise to develop solutions that fit your specific requirements. Whether you need a new application, a custom workflow system, or a unique database solution, we can design and implement it for you. We also offer ongoing support and maintenance to ensure that your software stays up-to-date and meets your evolving needs.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Pricing 
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Transparency and Fair Pricing.</strong> 
+                          <p>We work with you to understand your requirements and provide a customized quote that fits your budget. Our pricing is based on the complexity of the project, the scope of work, and the estimated time and resources required. We also offer flexible payment options and can work with you to develop a payment plan that suits your needs. Our goal is to provide high-quality, cost-effective solutions that help your business succeed.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div> 
+    </section>
 
 
 
