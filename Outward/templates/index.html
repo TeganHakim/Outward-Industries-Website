@@ -22,6 +22,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Animate on Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Site -->
     <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
@@ -67,7 +69,8 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 welcome" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
-                    <h2 class="text-white mb-4">&lt;Welcome to Outward Industries/&gt;</h2>
+                    <h2 class="text-white mb-4 welcome-phone-text">&lt;Welcome to Outward Industries/&gt;</h2>
+                    <h2 class="text-white mb-4 welcome-text"><span>&lt;</span>Welcome to Outward Industries<span>/&gt;</span></h2>
                     <p class="text-white-50">
                         At Outward Industries, we understand the importance of having a strong online presence and efficient business operations. 
                         That's why we offer innovative website design and custom software solutions tailored to the unique needs of small businesses. 
@@ -119,13 +122,45 @@
         <div class="container px-4 px-lg-5 approach">
             <!-- Featured Project Row-->
             <div class="row gx-5 mb-4 mb-lg-5 justify-content-center align-items-center">
-                <div class="col-xl-7 col-lg-7" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'images/to-do-list-cropped.svg' %}" alt="..." /></div>
-                <div class="col-xl-4 col-lg-5">
+                <div class="col-xl-4 col-lg-6" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'images/to-do-list-cropped.svg' %}" alt="..." /></div>
+                <div class="col-xl-8 col-lg-8">
                     <div class="featured-text text-center text-lg-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
                         <h3>Our Approach</h3>
-                        <p class="text-black-50 mb-0">We understand that each business is unique, which is why we offer personalized attention and creative 
-                            solutions to each of our clients. Our team works closely with you to identify your goals and create a website and software that 
-                            effectively conveys your message and enhances your workflow.</p>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="card text-center">
+                              <div class="title">
+                                <img src="{% static 'images/lightbulb.svg' %}" alt="Lightbulb">
+                                <h2>Basic</h2>
+                              </div>
+                              <div class="option">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut, nemo minus explicabo cupiditate nihil?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card text-center">
+                              <div class="title">
+                                <img src="{% static 'images/lightbulb.svg' %}" alt="Lightbulb">
+                                <h2>Premium</h2>
+                              </div>
+                              <div class="option">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut, nemo minus explicabo cupiditate nihil?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card text-center">
+                              <div class="title">
+                                <img src="{% static 'images/lightbulb.svg' %}" alt="Lightbulb">
+                                <h2>Standart</h2>
+                              </div>
+                              <div class="option">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut, nemo minus explicabo cupiditate nihil?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,9 +171,6 @@
                 <div class="col-xl-4 col-lg-4">
                     <div class="portfolio-text text-center text-lg-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
                         <h3>Outbound</h3>
-                        <p class="text-white-50 mb-0">Outbound is a cost-effective and time-saving SMS messaging app that lets users 
-                            send mass texts quickly by importing contacts directly into the system. It simplifies the marketing process and saves energy, 
-                            making it a practical solution for businesses and individuals who need to communicate with many people.</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
@@ -586,8 +618,10 @@
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#about" class="nav-link px-3 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#page-top" class="nav-link px-3 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-3 text-muted">About</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link px-3 text-muted">Projects</a></li>
+            <li class="nav-item"><a href="#faq" class="nav-link px-3 text-muted">Info</a></li>
             <li class="nav-item"><a href="#signup" class="nav-link px-3 text-muted">Contact</a></li>
             <li class="nav-item"><a href="/terms-of-use/" class="nav-link px-3 text-muted">Terms of Use</a></li>
             <li class="nav-item"><a href="/privacy-policy/" class="nav-link px-3 text-muted">Privacy Policy</a></li>
@@ -595,10 +629,17 @@
         <div class="container px-4 px-lg-5">Copyright &copy; <a href="#page-top" class="outward-text">Outward Industries</a> <span id="copy-date">2023</span></div>
         <a href="#page-top"><img src="{% static 'images/Outward-Industries-Logo.svg' %}"" alt="Outward Industries Logo"></a>
     </footer>
+    <!-- Loader -->
+    <div class="loader">
+      <span class="loader-span">
+          <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="Outward Industries">
+      </span>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/loader.js' %}"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- Animation on Scroll -->

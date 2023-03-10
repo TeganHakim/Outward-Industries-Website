@@ -95,6 +95,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 hr {
@@ -11948,6 +11949,7 @@ body {
 }
 
 #mainNav {
+  z-index: 99;
   min-height: 3.5rem;
   background-color: #fff;
 }
@@ -12259,8 +12261,49 @@ body {
   box-shadow: none !important;
 }
 
+.welcome-phone-text {
+  display: none;
+}
 
-/* Make < slide out on hover use max-width /> */
+.welcome-text {
+  position: relative;
+}
+
+.welcome.aos-animate .welcome-text span:first-child {
+  position: absolute;
+  transform: translateX(30px);
+  opacity: 0;
+  animation: code-anim-left 0.6s ease-in-out 0.1s forwards;
+}
+
+.welcome.aos-animate .welcome-text span:last-child {
+  position: absolute;
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: code-anim-right 0.6s ease-in-out 0.1s forwards;
+}
+
+
+@keyframes code-anim-left {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-25px);
+    opacity: 1;
+  }
+}
+@keyframes code-anim-right {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(5px);
+    opacity: 1;
+  }
+}
 
 @media (max-width: 620px) {
   .about-cards {
@@ -12271,6 +12314,15 @@ body {
   }
   .about-cards .small-meet {
     font-size: 6rem !important;
+  }
+  .welcome-phone-text {
+    display: block;
+  }
+  .welcome-text {
+    display: none;
+  }
+  .code-text {
+    display: none;
   }
 }
 
@@ -12458,6 +12510,83 @@ body {
   }
 }
 
+.approach img {
+  transform: scale(1.3) !important;
+  margin-right: 2rem;
+}
+
+.featured-text h3 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+
+.featured-text .card {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+}
+.featured-text .card:hover {
+  transform:scale(1.05);
+  background: transparent!important;
+  outline: 1px solid var(--bs-dark);
+}
+
+.featured-text .card .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.featured-text .card .title img {
+  background: transparent;
+  width: 90px;
+  height: 90px;
+  margin: 0!important;
+}
+
+.featured-text .card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.featured-text .title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+  font-size: 28px;
+  z-index: 2;
+}
+.featured-text .option {
+  position: relative;
+  z-index: 2;
+}
+.featured-text .option ul {
+  margin: 0;
+  padding: 0;
+}
+.featured-text .option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+  font-size: 16px;
+}
+
 .approach {
   margin-bottom: 15rem !important;
 }
@@ -12620,26 +12749,7 @@ body {
   min-height: 35rem;
   z-index: 1;
   overflow: hidden !important;
-}
-
-.terms-privacy-body > video {
-  overflow: hidden !important;
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  filter: grayscale();
-  z-index: -100;
-  transition: 1s opacity;
-}
-
-.terms-privacy-body .fullscreen-bg__video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100vw;
-  min-height: 100vh;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 0;
+  background: #131313;
 }
 
 .terms-privacy-body .content {
@@ -12653,6 +12763,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: 100;
+  background: #131313!important;
 }
 
 .terms-privacy-body nav {
@@ -13082,5 +13193,47 @@ body {
   }
   100% {
     stroke-opacity: 0;
+  }
+}
+
+/* Loader */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #131313;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--neutral-100);
+  opacity: 1;
+}
+.loader-span img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+  clip-path: inset(100% 0 0 0);
+  z-index: 99;
+  animation: loader 1700ms ease-in-out;
+  animation-delay: 400ms;
+}
+
+@keyframes loader {
+  0% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
   }
 }
