@@ -24,6 +24,7 @@
   --bs-gray-900: #212529;
   /* --bs-primary: #64a19d; */
   --bs-primary: #6c878f;
+  --bs-border: #d9dcde;
   --bs-hover: #6a98a1;
   --bs-secondary: #7464a1;
   --bs-success: #67c29c;
@@ -12211,13 +12212,14 @@ body {
   position: relative;
 }
 .faq-section .container {
-  padding: 7rem 0 !important;
+  padding: 7rem 0 10rem 0 !important;
 }
 .faq-section .container img {
  transform: scale(1.2);
 }
 .faq-section .container h1 {
   font-weight: bolder !important;
+  margin-bottom: 5rem !important;
 }
 .faq-section::after {
   content: '';
@@ -12360,6 +12362,65 @@ body {
     top: 300px;
   }
   .about-cards .welcome > h1:nth-child(2) {
+    left: 230px;
+    top: 430px;
+  }
+  .about-cards .welcome > h1:nth-child(3) {
+    left: 360px;
+    top: 560px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .about-cards .welcome > h1:nth-child(1) {
+    left: 60px;
+    top: 300px;
+  }
+  .about-cards .welcome > h1:nth-child(2) {
+    left: 180px;
+    top: 430px;
+  }
+  .about-cards .welcome > h1:nth-child(3) {
+    left: 310px;
+    top: 560px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .about-cards .welcome > h1:nth-child(1) {
+    left: 60px;
+    top: 300px;
+  }
+  .about-cards .welcome > h1:nth-child(2) {
+    left: 150px;
+    top: 430px;
+  }
+  .about-cards .welcome > h1:nth-child(3) {
+    left: 280px;
+    top: 560px;
+  }
+}
+@media (max-width: 1400px) {
+  .about-cards .welcome > h1:nth-child(1) {
+    left: 60px;
+    top: 300px;
+  }
+  .about-cards .welcome > h1:nth-child(2) {
+    left: 150px;
+    top: 430px;
+  }
+  .about-cards .welcome > h1:nth-child(3) {
+    left: 230px;
+    top: 560px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-cards .welcome > h1:nth-child(1) {
+    left: 60px;
+    top: 300px;
+  }
+  .about-cards .welcome > h1:nth-child(2) {
     left: 60px;
     top: 430px;
   }
@@ -12476,7 +12537,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0 7rem 0;
+  padding: 7rem 0 7rem 0;
 }
 
 .projects-section .featured-text,
@@ -12484,16 +12545,6 @@ body {
   padding: 2rem;
 }
 
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid var(--bs-primary);
-  }
-  .projects-section .portfolio-text {
-    padding: 0 0 0 2rem;
-    border-right: 0.5rem solid var(--bs-primary);
-  }
-}
 .projects-section .project-text {
   padding: 3rem;
   font-size: 90%;
@@ -12507,16 +12558,77 @@ body {
     border-color: var(--bs-primary);
     border-width: 0.25rem;
     width: 30%;
+  }  
+  .projects-section .portfolio-text {
+    padding: 0 0 0 2rem;
+    border-right: 0.5rem solid var(--bs-border);
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 1.5rem;
+  }
+  .projects-section .approach-image {
+    border-right: 0.5rem solid var(--bs-border);
+  }
+}
+
+@media (max-width: 1200px) {
+  .approach .col-lg-8 {
+    width: 85%!important;
+  }
+  .approach-image img {
+    margin-right: 0 !important;
+  }
+  .approach-image {
+    margin-bottom: 3rem !important;
+  }
+  .approach {
+    margin-bottom: 5rem !important;
+  }
+  .approach h3 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .approach-image img {
+    transform: scale(1) !important;
+  }
+  .approach .col-lg-8 {
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 800px) {
+  .featured-text .row {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .featured-text .row .col-sm-4 {
+    width: 100% !important;
+  }
+  .approach {
+    margin-bottom: 4rem !important;
   }
 }
 
 .approach img {
-  transform: scale(1.3) !important;
-  margin-right: 2rem;
+  transform: scale(1.3);
+}
+.approach-image img {
+  margin-right: 3.5rem;
+}
+.approach img.handshake {
+  transform: scale(1.8) !important;
+  margin-right: 2rem !important;
 }
 
 .featured-text h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-size: 3rem;
 }
 
@@ -12524,7 +12636,7 @@ body {
 .featured-text .card {
   position: relative;
   max-width: 300px;
-  height: auto;
+  height: 100%;
   overflow: hidden;
   border-radius: 15px;
   margin: 0 auto;
@@ -12543,12 +12655,13 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .featured-text .card .title img {
   background: transparent;
   width: 90px;
   height: 90px;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .featured-text .card:before {
@@ -12759,7 +12872,6 @@ body {
 }
 
 .terms-privacy-body footer {
-  border-top: 2px solid rgb(255, 255, 255) !important;
   position: absolute;
   width: 100%;
   z-index: 100;

@@ -5,10 +5,12 @@ function loader() {
     loader.style.opacity = 1;
     loader.style.display = "flex";
     setTimeout(() => {
-      $(".loader").fadeOut(1500);
-      $(".loader-span").fadeOut(1400);
-      document.body.style = "overflow-y: scroll;";
+      $(".loader-span").fadeOut(2000);
     }, 1100);
+    setTimeout(() => {
+      $(".loader").fadeOut(1000);
+      document.body.style = "overflow-y: scroll;";
+    }, 1800);
 }
 
 window.addEventListener("load", () => {

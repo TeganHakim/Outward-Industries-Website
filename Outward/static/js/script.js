@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', event => {
   document.getElementById('copy-date').innerText = new Date().getFullYear();  
   // Animate on scroll
   AOS.init({
-    disable: window.innerWidth < 700,
+    disable: window.innerWidth < 800,
     animatedClassName: 'aos-animate'
   });
 });
