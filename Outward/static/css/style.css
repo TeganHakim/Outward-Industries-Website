@@ -62,7 +62,7 @@
   --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -12204,6 +12204,7 @@ body {
   overflow: hidden;
   position: absolute;
   width: 100%;
+  pointer-events: none;
 }
 
 .faq-section {
@@ -12536,9 +12537,9 @@ body {
 }
 
 .projects-section {
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0 8rem 0;
+  z-index: 1;
 }
-
 .projects-section .featured-text,
 .projects-section .portfolio-text {
   padding: 2rem;
@@ -12911,7 +12912,16 @@ body {
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid var(--bs-primary);
+  box-shadow: 9px -4px 30px rgba(255, 255, 255, 0.3);
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+              transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
+.contact-section .card:hover {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transform: scale(1.05);
+ }
+
 .contact-section .card h4,
 .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -12933,13 +12943,17 @@ body {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
+  background: #000!important;
+  box-shadow: 5px 5px 20px #191919,
+              -5px -5px 20px #292929;
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 5px 20px #292929,
+              -5px -5px 20px #393939;
 }
 .contact-section .social a:active {
   color: #fff;
