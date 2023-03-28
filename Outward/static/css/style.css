@@ -12434,7 +12434,7 @@ body {
     font-size: 11rem !important;
     font-weight: bolder !important;
     position: absolute!important;
-    left: -170px;
+    left: -210px;
     top: 240px;
     transform: rotate(-90deg) !important;
   }
@@ -12462,12 +12462,15 @@ body {
   display: flex;
   flex-direction: column;
   width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  pointer-events: all;
   overflow: hidden;
-  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  background: #ECE9E6;
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #F0F0F0);
+  box-shadow: inset 0 3px 20px rgba(0, 0, 0, 0.1), 0 2px 30px rgba(0, 0, 0, 0.2);
   transform: scale(0.9);
+}
+.blog-section .card:hover {
+  cursor: pointer;
 }
 .blog-section .card__body {
   padding: 1rem;
@@ -13186,7 +13189,7 @@ body {
   filter: invert(1) brightness(1) saturate(1) contrast(1);
 }
 
-.terms-privacy-body .terms-privacy {
+.terms-privacy-body .terms-privacy, .learn-body .learn {
   padding-top: 8rem;
   position: relative;
   width: 100%;
@@ -13194,24 +13197,69 @@ body {
   min-height: 35rem;
   z-index: 1;
   overflow: hidden !important;
+}
+
+.terms-privacy-body .terms-privacy {
   background: #131313;
 }
 
 .terms-privacy-body .content {
   position: relative;
-  z-index: 100;
+  z-index: 99;
   padding-bottom: 3rem;
+}
+
+.learn-body .learn {
+  position: relative;
+  z-index: 99;
+  padding-bottom: 0rem;
 }
 
 .terms-privacy-body footer {
   position: absolute;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
   background: #131313!important;
+}
+
+.learn-body footer {
+  padding-top: 1rem !important;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  background: #ffffff!important;
+}
+.learn-body .badge {
+  background: #b4ad91;
+}
+.learn-body footer > * {
+  color:rgb(0, 0, 0, 0.6)!important;
+}
+.learn-body footer .nav-link:hover, .learn-body footer .outward-text:hover {
+  color:rgb(0, 0, 0, 0.2)!important;
+}
+.learn-body footer img {
+  filter: invert(1) brightness(0.8) saturate(0.7) contrast(0.9) !important;
 }
 
 .terms-privacy-body nav {
   border-bottom: 2px solid rgb(255, 255, 255) !important;
+}
+.learn-body nav {
+  background: #131313!important;
+  z-index: 100!important;
+}
+.learn-body nav .nav-link, .learn-body nav .navbar-brand {
+  color: rgba(255, 255, 255, 0.5)!important;
+}
+.learn-body nav .nav-link:hover, .learn-body nav .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.8)!important;
+}
+.learn-body nav img {
+  filter: invert(1) brightness(0.9) saturate(0.4) contrast(0.7) !important;
+}
+.learn-body nav .navbar-brand:hover img{
+  filter: invert(1) brightness(1) saturate(1) contrast(1) !important;
 }
 
 .portfolio-header {
