@@ -13236,7 +13236,7 @@ body {
   color:rgb(0, 0, 0, 0.6)!important;
 }
 .learn-body footer .nav-link:hover, .learn-body footer .outward-text:hover {
-  color:rgb(0, 0, 0, 0.2)!important;
+  color: rgba(0, 0, 0, 1)!important;
 }
 .learn-body footer img {
   filter: invert(1) brightness(0.8) saturate(0.7) contrast(0.9) !important;
@@ -13261,7 +13261,12 @@ body {
 .learn-body nav .navbar-brand:hover img{
   filter: invert(1) brightness(1) saturate(1) contrast(1) !important;
 }
-
+.learn-body .list-unstyled a {
+  color: rgba(0, 0, 0, 0.6)!important;
+}
+.learn-body .list-unstyled a:hover {
+  color: rgba(0, 0, 0, 1)!important;
+}
 .portfolio-header {
   text-align: center;
   width: 100%;
@@ -13748,4 +13753,10 @@ body {
   100% {
     clip-path: inset(0 0 0 0);
   }
+}
+
+.caption {
+  font-style: italic;
+  margin-top: -10px;
+  color: rgba(0, 0, 0, 0.6);
 }
