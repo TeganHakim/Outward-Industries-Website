@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from .models import LearnPost
 # Create your views here.
 def index(request):
-    return render(request, "index.html");
+    posts = LearnPost.objects.all()
+    return render(request, "index.html", {'posts': posts});
 
 def learn_web_design(request):
     return render(request, "learn-web-design.html");
@@ -18,3 +19,7 @@ def terms_of_use(request):
     
 def privacy_policy(request):
     return render(request, "privacy-policy.html");
+
+def learn_archive(request):
+    posts = LearnPost.objects.all()
+    return render(request, "learn-archive.html", {'posts': posts});

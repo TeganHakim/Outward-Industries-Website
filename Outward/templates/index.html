@@ -121,22 +121,22 @@
     <section class="projects-section bg-light" id="projects"?>
         <div class="container px-4 px-lg-5 approach">
             <!-- Featured Project Row-->
+            <img class="projects-bg" src="{% static 'images/marble.jpg' %}" alt="color">
             <h3>Our Approach</h3>
             <div class="row gx-5 mb-4 justify-content-center align-items-center row-separate">
               <div class="col-xl-4 col-lg-6 approach-image" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
-                <!-- <img class="img-fluid mb-3 mb-lg-0" src="{% static 'images/to-do-list-cropped.svg' %}" alt="..." /> -->
                 <div class="container">
                   <div class="loader-approach"></div>
                   <div class="loader-approach"></div>
                   <div class="loader-approach"></div>
                 </div>                
               </div>
-                <div class="col-xl-8 col-lg-8">
-                    <div class="featured-text text-center text-lg-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
-                        <div class="row gx-5">
-                          <div class="col-sm-4 flex-fill">
-                            <div class="card text-center">
-                              <div class="title">
+              <div class="col-xl-8 col-lg-8">
+                  <div class="featured-text text-center text-lg-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
+                      <div class="row gx-5">
+                        <div class="col-sm-4 flex-fill">
+                          <div class="card text-center">
+                            <div class="title">
                                 <img class="lightbulb" src="{% static 'images/lightbulb.svg' %}" alt="Lightbulb">
                                 <h2>Creative Solutions</h2>
                               </div>
@@ -417,13 +417,13 @@
                                 <path id="Oval-5" fill="#33f710" d="M439.46323832,88.2005958A2.34310968,2.34160874 0,1,1 444.14945768,88.2005958A2.34310968,2.34160874 0,1,1 439.46323832,88.2005958" class="zrpfIRpo_55"></path>
                                 <path id="Oval-6" stroke="#949599" stroke-width="2.34160874" fill="#e7e7e5"
                                   d="M477.21333899999996,148.041708A26.034552,26.0178749 0,1,1 529.282443,148.041708A26.034552,26.0178749 0,1,1 477.21333899999996,148.041708" class="zrpfIRpo_56"></path>
-                                <path d="M500.383423,118.901688 L500.383423,125.145978 L506.63305,125.145978 L506.63305,118.901688 L500.383423,118.901688 Z" id="Rectangle-12" stroke="#d5d26a" stroke-width="2.08142999" fill="#e7e7e5"
+                                <path d="M500.383423,118.901688 L500.383423,125.145978 L506.63305,125.145978 L506.63305,118.901688 L500.383423,118.901688 Z" id="Rectangle-12" stroke="#aaa" stroke-width="2.08142999" fill="#e7e7e5"
                                   class="zrpfIRpo_57"></path>
-                                <path d="M500.123077,170.937438 L500.123077,177.181728 L506.372704,177.181728 L506.372704,170.937438 L500.123077,170.937438 Z" id="Rectangle-12" stroke="#d5d26a" stroke-width="2.08142999" fill="#e7e7e5"
+                                <path d="M500.123077,170.937438 L500.123077,177.181728 L506.372704,177.181728 L506.372704,170.937438 L500.123077,170.937438 Z" id="Rectangle-12" stroke="#aaa" stroke-width="2.08142999" fill="#e7e7e5"
                                   class="zrpfIRpo_58"></path>
-                                <path d="M474.088525,145.179742 L474.088525,151.424032 L480.338152,151.424032 L480.338152,145.179742 L474.088525,145.179742 Z" id="Rectangle-12" stroke="#d5d26a" stroke-width="2.08142999" fill="#e7e7e5"
+                                <path d="M474.088525,145.179742 L474.088525,151.424032 L480.338152,151.424032 L480.338152,145.179742 L474.088525,145.179742 Z" id="Rectangle-12" stroke="#aaa" stroke-width="2.08142999" fill="#e7e7e5"
                                   class="zrpfIRpo_59"></path>
-                                <path d="M525.897284,145.179742 L525.897284,151.424032 L532.146911,151.424032 L532.146911,145.179742 L525.897284,145.179742 Z" id="Rectangle-12" stroke="#d5d26a" stroke-width="2.08142999" fill="#e7e7e5"
+                                <path d="M525.897284,145.179742 L525.897284,151.424032 L532.146911,151.424032 L532.146911,145.179742 L525.897284,145.179742 Z" id="Rectangle-12" stroke="#aaa" stroke-width="2.08142999" fill="#e7e7e5"
                                   class="zrpfIRpo_60"></path>
                                 <path id="Line" stroke="#084177" stroke-width="2.08142999" stroke-linecap="square" d="M529.282443,124.625621L529.282443,144.139027" class="zrpfIRpo_61"></path>
                                 <path id="Line" stroke="#084177" stroke-width="2.08142999" stroke-linecap="square" d="M529.282443,151.944389L529.282443,171.457795" class="zrpfIRpo_62"></path>
@@ -568,7 +568,36 @@
     <section class="blog-section text-center bg-light" id="learn">
         <h1>LEARN</h1>
         <div class="container px-4 px-lg-5">
-          <div class="card" onclick="window.location='learn-web-design/'">
+          {% for post in posts %}
+          {% if post.display %}
+          <div class="card" onclick="window.location='{{post.url}}'">
+            <div class="card__header">
+              <img src="{{post.image.url}}" alt="card__image" class="card__image" width="600">
+            </div>
+            <div class="card__body">
+              <span class="tag tag-brown">{{post.type}}</span>
+              <h4>{{post.title}}</h4>
+              <p>{{post.description}}</p>
+            </div>
+            <div class="card__footer">
+              <div class="user">
+                {% if post.author == "Tegan Hakim" %}
+                <img src="{% static 'images/headshot-tegan.png' %}" alt="user__image" class="user__image">
+                {% elif post.author == "Tyler Lumpkin" %}
+                <img src="{% static 'images/headshot-tyler.png' %}" alt="user__image" class="user__image">
+                {% elif post.author == "Outward Industries" %}
+                <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="user__image" class="user__image">
+                {% endif %}
+                <div class="user__info">
+                  <h5>{{post.author}}</h5>
+                  <small>{{post.date}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+          <!-- <div class="card" onclick="window.location='learn-web-design/'">
             <div class="card__header">
               <img src="{% static 'images/sketch-1.jpg' %}" alt="card__image" class="card__image" width="600">
             </div>
@@ -608,12 +637,12 @@
           </div>
           <div class="card" onclick="window.location='learn-business/'">
             <div class="card__header">
-              <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
+              <img src="{% static 'images/business-1.jpg' %}" alt="card__image" class="card__image" width="600">
             </div>
             <div class="card__body">
               <span class="tag tag-brown">Business</span>
-              <h4>Race to your heart content</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+              <h4>Uncovering Hidden Aspects of Business</h4>
+              <p>The hidden aspects of businesses, such as regulations, competition, cash flow management, staffing, and economic uncertainty, are explored in this article, which offers readers a comprehensive understanding of how businesses function and what to anticipate as consumers.</p>
             </div>
             <div class="card__footer">
               <div class="user">
@@ -624,8 +653,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
+        <a class="archive" href="/learn-archive/">Learn Archive <i class="fa-solid fa-book"></i></a>
     </section>
     <!-- Signup-->
     <section class="signup-section" id="signup">
