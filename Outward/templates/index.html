@@ -49,6 +49,7 @@
             </div>
         </div>
     </nav>
+    
     <!-- Masthead-->
     <header class="masthead">
         <video playsinline autoplay muted loop class="fullscreen-bg__video">
@@ -64,6 +65,7 @@
             </div>
         </div>
     </header>
+
     <!-- About-->
     <section class="about-section text-center " id="about">
         <div class="container px-4 px-lg-5">
@@ -80,11 +82,11 @@
                 </div>
             </div>
             <div class="separator">
-              <svg class="separator__svg" width="100%" height="500" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#272727d6" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <svg class="separator__svg" width="100%" height="500" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#272727d6" version="1.1">
                 <path d="M 30 73 L 100 18 V 10 Z" fill="#757575a6" stroke-width="0"/>
                  <path d="M 100 100 V 10 L 0 100"/>
               </svg>
-              <svg class="separator__svg2" width="100%" height="700" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#272727d6" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <svg class="separator__svg2" width="100%" height="700" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#272727d6" version="1.1">
                 <path d="M 30 73 L 100 18 V 10 Z" fill="#757575a6" stroke-width="0"/>
                  <path d="M 100 100 V 10 L 0 100"/>
               </svg>
@@ -98,7 +100,7 @@
               </div>
                 <div class="col-lg-3 welcome" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
                   <div class="card">
-                    <img src="{% static 'images/headshot-tegan.png' %}" alt="Tegan Headshot">
+                    <img src="{% static 'images/headshot-tegan.png' %}" alt="Tegan Hakim Headshot">
                     <div class="card-content">
                       <h3>Tegan Hakim</h3>
                       <p>“Simplicity is the soul of efficiency.” – Austin Freeman</p>
@@ -107,7 +109,7 @@
                 </div>
                 <div class="col-lg-3 welcome" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
                   <div class="card">
-                    <img src="{% static 'images/headshot-tyler.png' %}" alt="Tyler Headshot">
+                    <img src="{% static 'images/headshot-tyler.png' %}" alt="Tyler Lumpkin Headshot">
                     <div class="card-content">
                       <h3>Tyler Lumpkin</h3>
                       <p>"Quality is not an act, it is a habit." – Aristotle</p>
@@ -117,13 +119,14 @@
             </div>
         </div>
     </section>
+
     <!-- Projects-->
     <section class="projects-section bg-light" id="projects"?>
         <div class="container px-4 px-lg-5 approach">
             <!-- Featured Project Row-->
-            <img class="projects-bg" src="{% static 'images/marble.jpg' %}" alt="color">
+            <img class="projects-bg" draggable="false" src="{% static 'images/flow-bg.jpg' %}" alt="Projects Background">
             <h3>Our Approach</h3>
-            <div class="row gx-5 mb-4 justify-content-center align-items-center row-separate">
+            <div class="row gx-5 justify-content-center align-items-center row-separate">
               <div class="col-xl-4 col-lg-6 approach-image" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
                 <div class="container">
                   <div class="loader-approach"></div>
@@ -137,7 +140,7 @@
                         <div class="col-sm-4 flex-fill">
                           <div class="card text-center">
                             <div class="title">
-                                <img class="lightbulb" src="{% static 'images/lightbulb.svg' %}" alt="Lightbulb">
+                                <img class="lightbulb" src="{% static 'images/lightbulb.svg' %}" alt="Lightbulb Illuminating">
                                 <h2>Creative Solutions</h2>
                               </div>
                               <div class="option">
@@ -150,7 +153,7 @@
                           <div class="col-sm-4 flex-fill">
                             <div class="card text-center">
                               <div class="title">
-                                <img class="process" src="{% static 'images/process.svg' %}" alt="Process">
+                                <img class="process" src="{% static 'images/process.svg' %}" alt="Business Process">
                                 <h2>Iterative Design</h2>
                               </div>
                               <div class="option">
@@ -163,7 +166,7 @@
                           <div class="col-sm-4 flex-fill">
                             <div class="card text-center">
                               <div class="title">
-                                <img class="handshake" src="{% static 'images/handshake.svg' %}" alt="Handshake">
+                                <img class="handshake" src="{% static 'images/handshake.svg' %}" alt="Business Handshake">
                                 <h2>Collaborative Approach</h2>
                               </div>
                               <div class="option">
@@ -176,11 +179,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div>            
         </div>
-        <div class="container-fluid carousel-container">
-            <!-- Carousel -->
+
+        <!-- Carousel -->
+        <div class="container-fluid carousel-container">` `
+            <!-- Carousel Object-->
             <div class="row gx-5 mb-4 mb-lg-5 justify-content-center align-items-center carousel">
                 <div>
                   <div class="wave"></div>
@@ -208,21 +212,21 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <img src="{% static 'images/outbound-demo.png' %}" class="d-block w-100" alt="...">
+                            <img src="{% static 'images/outbound-demo.png' %}" draggable="false" class="d-block w-100" alt="Outbound Interface">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Outbound</h5>
                                 <p>SMS Marketing made efficient</p>
                             </div>
                             </div>
                             <div class="carousel-item">
-                            <img src="{% static 'images/img/demo-image-02.jpg' %}" class="d-block w-100" alt="...">
+                            <img src="{% static 'images/img/demo-image-02.jpg' %}" draggable="false" class="d-block w-100" alt="Outbound ...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Web Design</h5>
                                 <p>Anything you want. Quality back with creativity.</p>
                             </div>
                             </div>
                             <div class="carousel-item">
-                            <img src="{% static 'images/img/demo-image-01.jpg' %}" class="d-block w-100" alt="...">
+                            <img src="{% static 'images/img/demo-image-01.jpg' %}" draggable="false" class="d-block w-100" alt="Outbound ...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Software Solutions</h5>
                                 <p>Let computers do the work. Optimize and spend your time elsewhere.</p>
@@ -240,10 +244,11 @@
                     </div>
                 </div>
             </div>
+
             <!-- Project One Row-->
             <div class="container px-4 px-lg-5 projects">
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="#projects" data-aos-offset="100"><img class="img-fluid" src="{% static 'images/code-version-control.svg' %}" alt="..." /></div>
+                    <div class="col-lg-6" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="#projects" data-aos-offset="100"><img class="img-fluid" src="{% static 'images/code-version-control.svg' %}" alt="Code Version Control" /></div>
                     <div class="col-lg-6">
                         <div class="text-center h-100 project" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="#projects" data-aos-offset="100">
                             <div class="d-flex h-100">
@@ -260,7 +265,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+
+            <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6 code-anim" data-aos="fade-up-left" data-aos-easing="ease-out-cubic">
                         <svg id="hero-animation" viewBox="0 0 650 265" version="1.1" style="justify-content: center;">
@@ -478,12 +484,12 @@
 
     <!-- FAQ Section-->
     <section class="faq-section bg-light text-center " id="faq">
-        <img class="faq-bg" src="{% static 'images/flat-mountains.svg' %}" alt="Mountain background">
+        <img class="faq-bg" draggable="false" src="{% static 'images/flat-mountains.svg' %}" alt="Mountain Background">
         <div class="container px-4 px-lg-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
               <h1 class="display-4 lh-1">Wonder How We Can Help?</h1>
                 <div class="col-12 col-lg-5">
-                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="{% static 'images/faq.svg' %}" alt="..."></div>
+                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="{% static 'images/faq.svg' %}" alt="Office Workers"></div>
                 </div>
                 <div class="col-sm-8 col-md-6">
                   <div class="accordion" id="accordionExample">
@@ -582,7 +588,7 @@
           {% if post.display %}
           <div class="card" onclick="window.location='{{post.url}}'">
             <div class="card__header">
-              <img src="{{post.image.url}}" alt="card__image" class="card__image" width="600">
+              <img src="{{post.image.url}}" alt="Learn Post Image" class="card__image" width="600">
             </div>
             <div class="card__body">
               <span class="tag tag-brown">{{post.type}}</span>
@@ -592,11 +598,11 @@
             <div class="card__footer">
               <div class="user">
                 {% if post.author == "Tegan Hakim" %}
-                <img src="{% static 'images/headshot-tegan.png' %}" alt="user__image" class="user__image">
+                <img src="{% static 'images/headshot-tegan.png' %}" alt="Tegan Hakim Headshot" class="user__image">
                 {% elif post.author == "Tyler Lumpkin" %}
-                <img src="{% static 'images/headshot-tyler.png' %}" alt="user__image" class="user__image">
+                <img src="{% static 'images/headshot-tyler.png' %}" alt="Tyler Lumpkin Headshot" class="user__image">
                 {% elif post.author == "Outward Industries" %}
-                <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="user__image" class="user__image">
+                <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="Outward Industries Logo" class="user__image">
                 {% endif %}
                 <div class="user__info">
                   <h5>{{post.author}}</h5>
@@ -607,63 +613,6 @@
           </div>
           {% endif %}
           {% endfor %}
-          <!-- <div class="card" onclick="window.location='learn-web-design/'">
-            <div class="card__header">
-              <img src="{% static 'images/sketch-1.jpg' %}" alt="card__image" class="card__image" width="600">
-            </div>
-            <div class="card__body">
-              <span class="tag tag-brown">Web Design</span>
-              <h4>Digital Storytelling: The Art and Science of Web Design</h4>
-              <p>Learn about the key elements of web design and discover simple steps to make your website more attractive and user-friendly. Highlighting the importance of web design in creating a successful online presence and delivering a positive user experience.</p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img src="{% static 'images/headshot-tegan.png' %}" alt="user__image" class="user__image">
-                <div class="user__info">
-                  <h5>Tegan Hakim</h5>
-                  <small>4/16/2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" onclick="window.location='learn-software/'">
-            <div class="card__header">
-              <img src="{% static 'images/coding-2.jpg' %}" alt="card__image" class="card__image" width="600">
-            </div>
-            <div class="card__body">
-              <span class="tag tag-brown">Software</span>
-              <h4>A Beginners Guide to Software Design</h4>
-              <p>Learn about software design, its purpose, process, and what users can expect from custom digital solutions, as well as the history and importance of software design in unlocking the full potential of technology.</p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img src="{% static 'images/headshot-tyler.png' %}" alt="user__image" class="user__image">
-                <div class="user__info">
-                  <h5>Tyler Lumpkin</h5>
-                  <small>1/23/2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" onclick="window.location='learn-business/'">
-            <div class="card__header">
-              <img src="{% static 'images/business-1.jpg' %}" alt="card__image" class="card__image" width="600">
-            </div>
-            <div class="card__body">
-              <span class="tag tag-brown">Business</span>
-              <h4>Uncovering Hidden Aspects of Business</h4>
-              <p>The hidden aspects of businesses, such as regulations, competition, cash flow management, staffing, and economic uncertainty, are explored in this article, which offers readers a comprehensive understanding of how businesses function and what to anticipate as consumers.</p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="user__image" class="user__image">
-                <div class="user__info">
-                  <h5>Outward Industries</h5>
-                  <small>11/11/2022</small>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
         <a class="archive" href="/learn-archive/">Learn Archive <i class="fa-solid fa-book"></i></a>
     </section>
@@ -676,18 +625,18 @@
                     <form class="form-signup" id="contactForm" method="POST" action="#" data-aos="flip-down" data-aos-anchor-placement="#signup" data-aos-easing="ease-out-cubic" data-aos-offset="100">
                         {% csrf_token %}
                         <!-- Email address input-->
-                        <div class="row input-group-newsletter">
+                        <div class="row">
                             <div class="col"><input required class="form-control" id="contactName" type="text" placeholder="Enter name..." aria-label="Enter name..."/></div>
                             <div class="col"><input required class="form-control" id="emailAddress" type="email" placeholder="Enter email..." aria-label="Enter email..."/></div>
                         </div>
-                        <div class="row input-group-newsletter">
+                        <div class="row">
                             <div class="col"><input required class="form-control" id="subject" type="text" placeholder="Enter subject..." aria-label="Enter subject..."/></div>
                             <div class="col"><input required class="form-control" id="budget" type="text" placeholder="Enter budget..." aria-label="Enter budget..."/></div>
                         </div>
-                        <div class="row input-group-newsletter">
+                        <div class="row">
                             <div class="col"><textarea required class="form-control" id="message" type="text" placeholder="Enter message..." aria-label="Enter message..."></textarea></div>
                         </div>
-                        <div class="row input-group-newsletter">
+                        <div class="row">
                             <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Submit</button></div>
                         </div>
                     </form>
@@ -756,16 +705,14 @@
     <!-- Loader -->
     <div class="loader">
       <span class="loader-span">
-          <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="Outward Industries">
+          <img src="{% static 'images/Outward-Industries-Logo.svg' %}" alt="Outward Industries Logo">
       </span>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="{% static 'js/script.js' %}"></script>
     <script src="{% static 'js/loader.js' %}"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
     <!-- Animation on Scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
