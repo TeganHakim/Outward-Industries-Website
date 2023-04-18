@@ -1,16 +1,16 @@
 function loader() {
   window.scrollTo(0, 0);
   if (window.innerWidth < 768) {
+  document.documentElement.style = "overflow-y: hidden !important;";
   setTimeout(() => {
       $(".loader-span").fadeOut(1000);
-      document.body.style = "overflow-y: scroll;";
   }, 1000);
   setTimeout(() => {
       $(".loader").fadeOut(1000);
-      document.body.style = "overflow-y: scroll;";
+      document.documentElement.style = "overflow-y: scroll !important;";
   }, 1700);
   } else {
-      document.body.style = "overflow: hidden;";
+      document.documentElement.style = "overflow-y: hidden !important;";
       var loader = document.querySelector(".loader");
       loader.style.opacity = 1;
       loader.style.display = "flex";
@@ -19,7 +19,7 @@ function loader() {
       }, 1100);
       setTimeout(() => {
         $(".loader").fadeOut(1000);
-        document.body.style = "overflow-y: scroll;";
+        document.documentElement.style = "overflow-y: scroll !important;";
       }, 1800);
   }
 }

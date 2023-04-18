@@ -7368,6 +7368,15 @@ body {
   transition: opacity 0.3s ease-out;
 }
 
+@media (max-width: 1400px) and (min-width: 991px) {
+  .about-cards .card:hover h3 { 
+    inset: auto auto 100px 20px;
+  }
+  .about-cards .card:hover p {
+    inset: auto auto -100px 20px;
+  }
+}
+
 .code-anim {
   display: flex !important;
   justify-content: center !important;
