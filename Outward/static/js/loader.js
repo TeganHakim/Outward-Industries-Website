@@ -26,4 +26,7 @@ function loader() {
 
 window.addEventListener("load", () => {
     loader();
+    if (window.innerWidth < 850) {
+      $( "video" ).remove();
+    }
 });
