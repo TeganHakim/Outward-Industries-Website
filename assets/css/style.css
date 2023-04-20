@@ -5039,7 +5039,6 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../images/img/bg-masthead.jpg"); */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.3) 0%,
@@ -5054,6 +5053,7 @@ body {
 }
 
 .masthead > video {
+  display: block;
   overflow: hidden !important;
   object-fit: cover;
   width: 100vw;
@@ -5064,6 +5064,28 @@ body {
   filter: grayscale() sepia(40%) saturate(300%) brightness(75%) hue-rotate(5deg);
   z-index: -100;
   transition: 1s opacity;
+}
+
+.masthead .landing-image-mobile {
+  display: none;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale() sepia(40%) saturate(300%) brightness(75%) hue-rotate(5deg);
+  z-index: -100;
+}
+
+@media (max-width: 850px) {
+  .masthead > video {
+    display: none!important;
+
+  }
+  .masthead .landing-image-mobile {
+    display: block;
+  }
 }
 
 .masthead h1,
