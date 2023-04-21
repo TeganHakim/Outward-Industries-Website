@@ -26,9 +26,4 @@ function loader() {
 
 window.addEventListener("load", () => {
     loader();
-    if (window.innerWidth < 850) {
-      $(".fullscreen-bg__video").remove();
-    } else {
-      $(".landing-image-mobile").remove();
-    }
 });
