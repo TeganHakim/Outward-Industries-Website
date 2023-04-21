@@ -5084,7 +5084,7 @@ body {
 
   }
   .masthead .landing-image-mobile {
-    display: block;
+    display: block!important;
   }
 }
 
