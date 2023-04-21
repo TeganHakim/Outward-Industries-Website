@@ -5053,7 +5053,6 @@ body {
 }
 
 .masthead > video {
-  display: block;
   overflow: hidden !important;
   object-fit: cover;
   width: 100vw;
@@ -5066,26 +5065,8 @@ body {
   transition: 1s opacity;
 }
 
-.masthead .landing-image-mobile {
-  display: none;
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: grayscale() sepia(40%) saturate(300%) brightness(75%) hue-rotate(5deg);
-  z-index: -100;
-}
-@media (max-width: 850px) {
-  .masthead > video {
-    display: none!important;
-
-  }
-  .masthead .landing-image-mobile {
-    display: block;
-    display: block!important;
-  }
+.masthead > video::--webkit-media-controls {
+  display: none !important;
 }
 
 .masthead h1,

@@ -3,12 +3,12 @@ function loader() {
   if (window.innerWidth < 768) {
   document.documentElement.style = "overflow-y: hidden !important;";
   setTimeout(() => {
-      $(".loader-span").fadeOut(1000);
+      $(".loader-span").fadeOut(1700);
   }, 1000);
   setTimeout(() => {
       $(".loader").fadeOut(1000);
       document.documentElement.style = "overflow-y: scroll !important;";
-  }, 1700);
+  }, 1600);
   } else {
       document.documentElement.style = "overflow-y: hidden !important;";
       var loader = document.querySelector(".loader");
