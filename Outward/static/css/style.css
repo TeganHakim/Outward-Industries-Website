@@ -5065,7 +5065,7 @@ body {
   transition: 1s opacity;
 }
 
-.masthead > video::--webkit-media-controls {
+.masthead > video::-webkit-media-controls {
   display: none !important;
 }
 
