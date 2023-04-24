@@ -5052,7 +5052,20 @@ body {
   overflow: hidden !important;
 }
 
-.masthead > video {
+.masthead > img {
+  overflow: hidden !important;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale() sepia(40%) saturate(300%) brightness(75%) hue-rotate(5deg);
+  z-index: -100;
+  transition: 1s opacity;
+}
+
+/* .masthead > video {
   overflow: hidden !important;
   object-fit: cover;
   width: 100vw;
@@ -5067,7 +5080,7 @@ body {
 
 .masthead > video::-webkit-media-controls {
   display: none !important;
-}
+} */
 
 .masthead h1,
 .masthead .h1 {

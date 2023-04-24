@@ -25,5 +25,5 @@ function loader() {
 }
 
 window.addEventListener("load", () => {
-    loader();
+  loader();
 });
