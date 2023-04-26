@@ -5159,7 +5159,7 @@ body {
   );
 }
 .about-section p {
-  margin-bottom: 10rem;
+  margin-bottom: 13rem;
 }
 
 @media (max-width: 1400px) {
@@ -5641,11 +5641,11 @@ body {
   opacity: 0;
   max-width: 80%;
   transition: opacity 0.3s ease-out;
-  inset: auto auto -130px 20px;
+  inset: auto auto -170px 20px;
   z-index: 2;
 }
 .about-cards .card:hover h3 {
-  inset: auto auto 140px 20px;
+  inset: auto auto 130px 20px;
   transition: inset 0.3s ease-out;
 }
 .about-cards .card:hover p {
@@ -5860,7 +5860,9 @@ body {
   margin-top: -100px;
   border-radius: 5px;
   background: #b1b5ba;
-  animation: dot1_ 5s cubic-bezier(1, 0.72, 0.69, 1.31) infinite;
+}
+.approach-image.aos-animate .loader-approach {
+  animation: dot1_ 5s cubic-bezier(1, 0.72, 0.69, 1.31);
 }
 
 .loader-approach:nth-child(2) {
@@ -5871,6 +5873,8 @@ body {
   margin-left: -150px;
   border-radius: 3px;
   background: #d9dcde;
+}
+.approach-image.aos-animate .loader-approach:nth-child(2) {
   animation-name: dot2_;
 }
 
@@ -5882,7 +5886,21 @@ body {
   margin-left: -40px;
   border-radius: 0 0 5px 5px;
   background: #959595;
+}
+.approach-image.aos-animate .loader-approach:nth-child(3) {
   animation-name: dot3_;
+}
+
+@media (max-width: 800px) {
+  .approach-image:hover .loader-approach {
+    animation: dot1_ 5s cubic-bezier(1, 0.72, 0.69, 1.31);
+  }
+  .approach-image:hover .loader-approach:nth-child(2) {
+    animation-name: dot2_;
+  }
+  .approach-image:hover .loader-approach:nth-child(3) {
+    animation-name: dot3_;
+  }
 }
 
 @keyframes dot1_ {
