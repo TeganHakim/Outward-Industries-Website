@@ -49,3 +49,8 @@ window.addEventListener('DOMContentLoaded', event => {
     animatedClassName: 'aos-animate'
   });
 });
+
+function editSubject(subject) {
+    let subjectElement = document.getElementById('subject');
+    subjectElement.value = subject;
+}

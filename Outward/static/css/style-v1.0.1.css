@@ -5737,6 +5737,25 @@ body {
   font-size: 90%;
 }
 
+.project-text .quote-btn {
+  text-align: center;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0px 20px;
+  border-radius: 10px;
+  line-height: 3rem;
+  background: inherit !important;
+  box-shadow: 5px 5px 20px #191919, -5px -5px 20px #292929;
+  text-decoration: none;
+}
+.project-text .quote-btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 5px 20px #292929, -5px -5px 20px #393939;
+}
+.project-text .quote-btn:active {
+  color: #fff;
+}
+
 .approach-image > div {
   transform: scale(1.3);
 }
