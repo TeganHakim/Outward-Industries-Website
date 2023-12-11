@@ -6,9 +6,9 @@ def index(request):
     f = open("admin.json", "r");
     data = json.load(f);
     if (LearnPost.objects.all().count() < 1):
-        LearnPost.objects.create(**json["business"])
-        LearnPost.objects.create(**json["software"])
-        LearnPost.objects.create(**json["web-design"])
+        LearnPost.objects.create(**data["business"])
+        LearnPost.objects.create(**data["software"])
+        LearnPost.objects.create(**data["web-design"])
     posts = LearnPost.objects.all()
     f.close();
     return render(request, "index.html", {'posts': posts});
