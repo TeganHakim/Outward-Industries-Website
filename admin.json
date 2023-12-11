@@ -1,0 +1,36 @@
+{
+    "business": {
+        "type": "Business",
+        "title": "Uncovering Hidden Aspects of Business",
+        "description": "The hidden aspects of businesses, such as regulations, competition, cash flow management, staffing, and economic uncertainty, are explored in this article, which offers readers a comprehensive understanding of how businesses function and what to anticipate as consumers.",
+        "date": "11/11/2022",
+        "author": "Outward Industries",
+        "file": "media/learn-business.html",
+        "image": "media/business-1.jpg",
+        "url": "learn-business.html",
+        "display": true
+    },
+    "software": {
+        "type": "Software",
+        "title": "A Beginners Guide to Software Design",
+        "description": "Learn about software design, its purpose, process, and what users can expect from custom digital solutions, as well as the history and importance of software design in unlocking the full potential of technology.",
+        "date": "1/23/2023",
+        "author": "Tegan Hakim",
+        "file": "media/learn-software.html",
+        "image": "media/coding-2.jpg",
+        "url": "learn-software.html",
+        "display": true
+    },
+    "web-design": {
+        "type": "Web Design",
+        "title": "Digital Storytelling: The Art and Science of Web Design",
+        "description": "Learn about the key elements of web design and discover simple steps to make your website more attractive and user-friendly. Highlighting the importance of web design in creating a successful online presence and delivering a positive user experience.",
+        "date": "4/21/2023",
+        "author": "Tyler Lumpkin",
+        "file": "media/learn-web-design.html",
+        "image": "media/sketch-1.jpg",
+        "url": "learn-web-design.html",
+        "display": true
+    }
+    
+} 

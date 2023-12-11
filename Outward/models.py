@@ -13,3 +13,4 @@ class LearnPost(models.Model):
     display = models.BooleanField(default=False)
     def __str__(self):
         return self.title
+
